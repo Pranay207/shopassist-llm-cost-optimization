@@ -25,7 +25,7 @@
 
 <div align="center">
   <br/>
-  <img src="assets/terminal_benchmark.svg" alt="Terminal Benchmark Execution" width="820" />
+  <img src="assets/terminal_benchmark.png" alt="Terminal Benchmark Execution" width="820" />
   <br/>
 </div>
 

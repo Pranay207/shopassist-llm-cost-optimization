@@ -23,6 +23,12 @@
 
 *All 6 evaluation test cases in `pytest` pass cleanly.*
 
+<div align="center">
+  <br/>
+  <img src="assets/terminal_benchmark.svg" alt="Terminal Benchmark Execution" width="820" />
+  <br/>
+</div>
+
 ---
 
 ## 💡 Key Architectural Optimizations

@@ -90,39 +90,14 @@ All 6 test cases in `pytest` pass cleanly.
 
 ---
 
-## 4. Demo Video Script & Walkthrough (2–3 Minutes)
-
-Use this structure when recording your screen for the video submission:
-
-### Part 1: Introduction (0:00 – 0:30)
-> *"Hi everyone, this is my submission for the IndusEuro Labs LLM Agent Engineering Internship. Today, I'll walk through how I optimized ShopAssist, a Tier-1 customer support copilot, achieving an 83% cost reduction on Question 1 and a 99% reduction on Question 2 while maintaining 100% resolution accuracy."*
-
-### Part 2: Question 1 Optimization (0:30 – 1:15)
-> *"In Question 1, the baseline cost over 8,900 points per ticket. I identified two main issues:*
-> *First, a dynamic UUID was prepended to the system prompt, which completely broke prompt caching across tickets.*
-> *Second, phrases like 'think step by step' triggered verbose reasoning outputs of 480 tokens, which at 15 points per token burned 7,200 points.*
-> *To fix this, I established a static prefix of 1,745 tokens containing few-shot examples and policy manuals. This guarantees we hit the 1024-token cache threshold and receive the 90% prompt caching discount. I also streamlined output formatting instructions, bringing total cost down from 8,900 points to 1,520 points per ticket—well below the 3,000 point target."*
-
-### Part 3: Question 2 Pipeline Optimization (1:15 – 2:00)
-> *"In Question 2, the pipeline suffered from two classic anti-patterns: running 4 separate LLM calls for every ticket, and feeding a bloated 200,000-token help center directly into the LLM context.*
-> *I redesigned this into an efficient hybrid pipeline:*
-> *Triage and Retrieval run deterministically in Python, filtering out all noisy filler and isolating the relevant core policies.*
-> *Compose makes a single, prompt-cached LLM call.*
-> *Audit programmatically verifies the output schema.*
-> *This slashed the per-ticket points from over 70,000 down to just 1,501 points for physical replacement and 1,540 points for escalation, beating the 2,500 target by nearly 40%."*
-
-### Part 4: Demonstration & Verification (2:00 – 2:30)
-> *"Here, I'll run `pytest -q` to show all tests passing, followed by `python question1/run.py` and `python question2/run.py` to confirm the exact resolution outputs and point counts. Thank you!"*
-
----
-
-## 5. How to Run Locally
+## 4. How to Run & Reproduce Locally
 
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
 
 # 2. Run pytest test suite
+pytest -q tests/test_question1.py
 pytest -q
 
 # 3. Run Question 1 runner

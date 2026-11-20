@@ -5,6 +5,9 @@
 [![Question 1 Cost](https://img.shields.io/badge/Q1%20Cost-1%2C520%20pts%20(Target%20%E2%89%A4%203%2C000)-success.svg)]()
 [![Question 2 Cost](https://img.shields.io/badge/Q2%20Cost-1%2C580%20pts%20(Target%20%E2%89%A4%202%2C500)-success.svg)]()
 [![Accuracy](https://img.shields.io/badge/Resolution%20Accuracy-100%25-brightgreen.svg)]()
+[![Demo Video](https://img.shields.io/badge/%F0%9F%8E%A5%20Demo%20Video-Google%20Drive-red.svg?logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1zcIBjTTLNGyhoWOLnwVbReK7f5wCpqH9/view?usp=sharing)
+
+> 🎥 **Walkthrough Video:** [**Watch the Implementation & Benchmark Demo on Google Drive**](https://drive.google.com/file/d/1zcIBjTTLNGyhoWOLnwVbReK7f5wCpqH9/view?usp=sharing)
 
 **ShopAssist** is an autonomous Tier-1 customer support copilot engineered for an e-commerce platform. For each incoming support ticket, ShopAssist:
 1. Ingests and parses customer conversation threads (`data/tickets/`)

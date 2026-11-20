@@ -2,6 +2,8 @@
 
 **Candidate Solution for IndusEuro Labs: Remote Internship – LLM Agent Engineering**
 
+> 🎥 **Demo Walkthrough Video:** [**Watch on Google Drive**](https://drive.google.com/file/d/1zcIBjTTLNGyhoWOLnwVbReK7f5wCpqH9/view?usp=sharing)
+
 ---
 
 ## 1. Executive Summary & Results
